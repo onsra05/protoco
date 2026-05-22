@@ -12,7 +12,7 @@ interface ProjectModalProps {
 }
 
 export function ProjectModal({ project, onClose }: ProjectModalProps) {
-  // Close on Escape key
+
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -21,7 +21,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [onClose]);
 
-  // Prevent body scroll when open
+
   useEffect(() => {
     if (project) {
       document.body.style.overflow = "hidden";
@@ -37,7 +37,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
     <AnimatePresence>
       {project && (
         <>
-          {/* Overlay */}
+
           <motion.div
             variants={overlayVariants}
             initial="hidden"
@@ -48,7 +48,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             aria-hidden="true"
           />
 
-          {/* Modal */}
+
           <motion.div
             variants={modalVariants}
             initial="hidden"
@@ -60,7 +60,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
             className="fixed inset-x-4 inset-y-4 z-50 mx-auto my-auto max-h-[calc(100vh-2rem)] max-w-2xl overflow-y-auto rounded-2xl border border-border bg-surface-1 shadow-2xl sm:inset-x-6"
           >
             <div className="p-6 sm:p-8">
-              {/* Close button */}
+
               <div className="mb-6 flex items-start justify-between gap-4">
                 <div>
                   <h2
@@ -82,12 +82,11 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </button>
               </div>
 
-              {/* Description */}
+
               <p className="mb-6 leading-relaxed text-muted-foreground">
                 {project.longDescription}
               </p>
 
-              {/* Metrics */}
               <div className="mb-6">
                 <h3 className="mb-3 font-mono text-xs font-medium uppercase tracking-widest text-accent">
                   // Metrics
@@ -104,7 +103,6 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </div>
               </div>
 
-              {/* Architecture */}
               <div className="mb-6">
                 <h3 className="mb-3 font-mono text-xs font-medium uppercase tracking-widest text-accent">
                   // Architecture
@@ -119,7 +117,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </ul>
               </div>
 
-              {/* Tech stack */}
+
               <div className="mb-8">
                 <h3 className="mb-3 font-mono text-xs font-medium uppercase tracking-widest text-accent">
                   // Tech Stack
@@ -133,7 +131,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                 </div>
               </div>
 
-              {/* Links */}
+
               <div className="flex gap-4">
                 <a
                   href={project.githubUrl}
