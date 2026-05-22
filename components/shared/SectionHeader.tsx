@@ -33,7 +33,7 @@ export function SectionHeader({
         className
       )}
     >
-      {/* Label chip */}
+
       <div
         className={cn(
           "mb-4 inline-flex items-center gap-2",
@@ -47,7 +47,7 @@ export function SectionHeader({
         <span className="h-px w-8 bg-accent/60" aria-hidden="true" />
       </div>
 
-      {/* Title */}
+
       <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl">
         {title}
         {titleGradient && (
@@ -58,7 +58,6 @@ export function SectionHeader({
         )}
       </h2>
 
-      {/* Description */}
       {description && (
         <p
           className={cn(
