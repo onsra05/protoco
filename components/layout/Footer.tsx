@@ -8,7 +8,7 @@ const socialIcons = {
 } as const;
 
 const SOCIALS = [
-  { icon: "github" as const, href: "https://github.com/hoanganh", label: "GitHub" },
+  { icon: "github" as const, href: "https://github.com/onsra05", label: "GitHub" },
   { icon: "linkedin" as const, href: "https://linkedin.com/in/hoanganh", label: "LinkedIn" },
   { icon: "twitter" as const, href: "https://twitter.com/hoanganh", label: "Twitter" },
 ];
