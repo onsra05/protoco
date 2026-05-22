@@ -1,0 +1,88 @@
+import type { Skill } from "@/types";
+
+export const SKILLS: Skill[] = [
+  {
+    id: "ai-engineering",
+    category: "AI Engineering",
+    icon: "brain",
+    level: 95,
+    items: [
+      { name: "LLM Fine-tuning", proficiency: "expert" },
+      { name: "RAG Systems", proficiency: "expert" },
+      { name: "Vector Databases", proficiency: "expert" },
+      { name: "Inference Optimization", proficiency: "advanced" },
+      { name: "MLOps", proficiency: "advanced" },
+      { name: "PyTorch / JAX", proficiency: "advanced" },
+    ],
+  },
+  {
+    id: "backend",
+    category: "Backend Architecture",
+    icon: "server",
+    level: 92,
+    items: [
+      { name: "Python / FastAPI", proficiency: "expert" },
+      { name: "Go", proficiency: "advanced" },
+      { name: "Rust", proficiency: "intermediate" },
+      { name: "PostgreSQL", proficiency: "expert" },
+      { name: "Redis", proficiency: "expert" },
+      { name: "gRPC / REST", proficiency: "expert" },
+    ],
+  },
+  {
+    id: "fullstack",
+    category: "Fullstack Development",
+    icon: "layers",
+    level: 88,
+    items: [
+      { name: "Next.js / React", proficiency: "expert" },
+      { name: "TypeScript", proficiency: "expert" },
+      { name: "TailwindCSS", proficiency: "expert" },
+      { name: "GraphQL", proficiency: "advanced" },
+      { name: "React Query", proficiency: "advanced" },
+      { name: "Zustand / Redux", proficiency: "advanced" },
+    ],
+  },
+  {
+    id: "devops",
+    category: "DevOps & Cloud",
+    icon: "cloud",
+    level: 90,
+    items: [
+      { name: "Kubernetes", proficiency: "expert" },
+      { name: "AWS / GCP", proficiency: "expert" },
+      { name: "Terraform", proficiency: "advanced" },
+      { name: "ArgoCD / GitOps", proficiency: "advanced" },
+      { name: "Prometheus / Grafana", proficiency: "expert" },
+      { name: "Docker", proficiency: "expert" },
+    ],
+  },
+  {
+    id: "systems",
+    category: "System Design",
+    icon: "cpu",
+    level: 90,
+    items: [
+      { name: "Distributed Systems", proficiency: "expert" },
+      { name: "Event-Driven Arch.", proficiency: "expert" },
+      { name: "Kafka / Flink", proficiency: "advanced" },
+      { name: "CQRS / Event Sourcing", proficiency: "advanced" },
+      { name: "Microservices", proficiency: "expert" },
+      { name: "API Design", proficiency: "expert" },
+    ],
+  },
+  {
+    id: "automation",
+    category: "Automation & Tools",
+    icon: "zap",
+    level: 85,
+    items: [
+      { name: "CI/CD Pipelines", proficiency: "expert" },
+      { name: "GitHub Actions", proficiency: "expert" },
+      { name: "Ansible", proficiency: "advanced" },
+      { name: "Bash / Python Scripting", proficiency: "expert" },
+      { name: "OpenTelemetry", proficiency: "advanced" },
+      { name: "Vault / Secrets Mgmt", proficiency: "advanced" },
+    ],
+  },
+];
