@@ -1,13 +1,13 @@
 import type { NavItem, SocialLink } from "@/types";
 
 export const SITE_CONFIG = {
-  name: "HoangAnh",
-  fullName: "HoangAnh",
+  name: "Hoang Anh",
+  fullName: "Nguyen Hoang Anh",
   title: "AI Systems Engineer & Fullstack Developer",
   description:
     "Building intelligent systems at the intersection of AI, backend architecture, and modern web engineering.",
   url: "https://hoanganh.dev",
-  email: "contact@hoanganh.dev",
+  email: "hoanganh54321.oc@gmail.com",
   location: "Ho Chi Minh City, Vietnam",
   avatar: "/images/avatar.jpg",
 } as const;
@@ -24,7 +24,7 @@ export const NAV_ITEMS: NavItem[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     platform: "GitHub",
-    url: "https://github.com/hoanganh",
+    url: "https://github.com/onsra05",
     icon: "github",
   },
   {
@@ -34,7 +34,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     platform: "Twitter",
-    url: "https://twitter.com/hoanganh",
+    url: "https://twitter.com/iam_daau",
     icon: "twitter",
   },
 ];
