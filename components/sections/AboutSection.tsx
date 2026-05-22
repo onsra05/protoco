@@ -31,7 +31,7 @@ export function AboutSection() {
         />
 
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
-          
+          {/* Left: Text */}
           <motion.div
             variants={slideInLeft}
             initial="hidden"
@@ -59,7 +59,7 @@ export function AboutSection() {
               engineering, distributed systems, and the practical realities of building at scale.
             </p>
 
-
+            {/* Highlights */}
             <div className="space-y-3 pt-4">
               {HIGHLIGHTS.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">
@@ -72,7 +72,7 @@ export function AboutSection() {
             </div>
           </motion.div>
 
-
+          {/* Right: Tech Stack */}
           <motion.div
             variants={slideInRight}
             initial="hidden"
@@ -81,7 +81,7 @@ export function AboutSection() {
           >
             <div className="glass-card rounded-2xl p-8">
               <h3 className="mb-6 font-mono text-xs font-medium uppercase tracking-widest text-accent">
-                // Tech Stack
+                {`// Tech Stack`}
               </h3>
 
               <div className="flex flex-wrap gap-2">
@@ -100,6 +100,7 @@ export function AboutSection() {
                 ))}
               </div>
 
+              {/* Code snippet decoration */}
               <div className="mt-8 rounded-xl border border-border bg-background/60 p-4 font-mono text-xs leading-relaxed">
                 <div className="text-muted-foreground/60">
                   <span className="text-purple-400">const</span>{" "}
