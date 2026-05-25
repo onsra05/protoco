@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 import { SITE_CONFIG } from "@/config/site";
 
 const socialIcons = {
@@ -21,7 +22,13 @@ export function Footer() {
       <div className="section-container flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
         <p className="font-mono text-sm text-muted-foreground">
           <span className="text-accent">©</span> {year} {SITE_CONFIG.name}. Built with Next.js &
-          Framer Motion.
+          Framer Motion.{" "}
+          <Link
+            href="/privacy-policy"
+            className="underline-offset-2 hover:text-accent hover:underline"
+          >
+            Privacy Policy
+          </Link>
         </p>
 
         <div className="flex items-center gap-4" role="list" aria-label="Social links">
