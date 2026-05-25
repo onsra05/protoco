@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowRight, Clock } from "lucide-react";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { BLOG_POSTS } from "@/data/stats";
@@ -110,13 +111,13 @@ export function BlogSection() {
           viewport={{ once: true }}
           className="mt-12 text-center"
         >
-          <a
+          <Link
             href="/blog"
             className="inline-flex items-center gap-2 rounded-xl border border-border px-6 py-3 text-sm font-medium text-muted-foreground transition-all hover:border-accent/40 hover:text-accent"
           >
             View all articles
             <ArrowRight size={16} />
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>
