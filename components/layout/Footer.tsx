@@ -11,7 +11,7 @@ const socialIcons = {
 const SOCIALS = [
   { icon: "github" as const, href: "https://github.com/onsra05", label: "GitHub" },
   { icon: "linkedin" as const, href: "https://linkedin.com/in/hoanganh", label: "LinkedIn" },
-  { icon: "twitter" as const, href: "https://twitter.com/hoanganh", label: "Twitter" },
+  { icon: "twitter" as const, href: "https://twitter.com/iam_daau", label: "Twitter" },
 ];
 
 export function Footer() {
